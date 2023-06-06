@@ -1,0 +1,54 @@
+{
+    "os": "Linux-5.15.0-1038-azure-x86_64-with-glibc2.31",
+    "python": "3.10.4",
+    "heartbeatAt": "2023-06-06T16:02:53.364785",
+    "startedAt": "2023-06-06T16:02:53.073890",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "mlops_zoomcamp_2023",
+        "--wandb_entity",
+        "avinashchandrav",
+        "--data_artifact",
+        "avinashchandrav/mlops_zoomcamp_2023/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/workspaces/mlops-zoomcamp/cohorts/2023/02-experiment-tracking/homework-wandb/sweep.py",
+    "codePath": "cohorts/2023/02-experiment-tracking/homework-wandb/sweep.py",
+    "git": {
+        "remote": "https://github.com/DataTalksClub/mlops-zoomcamp",
+        "commit": "ac5ac89b9f6a921b0216243472a1339c9de2b2ca"
+    },
+    "email": "avinashchandrav@gmail.com",
+    "root": "/workspaces/mlops-zoomcamp",
+    "host": "codespaces-2c3cbd",
+    "username": "codespace",
+    "executable": "/home/codespace/.python/current/bin/python",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2793.436,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2793.436,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2793.436,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 31.32598876953125,
+        "used": 12.493877410888672
+    },
+    "memory": {
+        "total": 3.833934783935547
+    }
+}
