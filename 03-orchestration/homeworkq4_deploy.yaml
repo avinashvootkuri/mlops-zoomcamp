@@ -1,18 +1,15 @@
 ###
 ### A complete description of a Prefect Deployment for flow 'main-flow'
 ###
-name: taxitrip-schedule
+name: validation_schedule
 description: The main training pipeline
-version: 65e596e898266b21a832d34d7f76fa80
+version: 6fbfc163eb6f5dfa35f1b55e0df4889d
 # The work queue that will handle this deployment's runs
-work_queue_name: homework
+work_queue_name: homeworkq4
 work_pool_name: mlopshomeworkpool
 tags: []
 parameters: {}
-schedule:
-  cron: 0 9 3 * *
-  timezone: null
-  day_or: true
+schedule: null
 is_schedule_active: null
 infra_overrides: {}
 infrastructure:
@@ -33,21 +30,21 @@ flow_name: main-flow
 manifest_path: null
 storage: null
 path: /Users/avinashshruthi/Documents/Git Repos/mlops-zoomcamp/03-orchestration
-entrypoint: 3.4/orchestrate.py:main_flow
+entrypoint: 3.4/orchestrate_v2.py:main_flow
 parameter_openapi_schema:
   title: Parameters
   type: object
   properties:
     train_path:
       title: train_path
-      default: ./data/green_tripdata_2021-01.parquet
+      default: ./data/green_tripdata_2023-02.parquet
       position: 0
       type: string
     val_path:
       title: val_path
-      default: ./data/green_tripdata_2021-02.parquet
+      default: ./data/green_tripdata_2023-03.parquet
       position: 1
       type: string
   required: null
   definitions: null
-timestamp: '2023-06-14T18:49:48.941956+00:00'
+timestamp: '2023-06-14T20:19:00.023443+00:00'
